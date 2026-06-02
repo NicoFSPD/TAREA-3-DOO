@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modelo;
 
 /**
  * clase abstracta que de los productos de tipo bebida

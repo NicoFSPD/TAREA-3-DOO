@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modelo;
 /**
  * Clase que representa a un comprador de productos de un expendedor
  * El comprador interactua con el expendedor usando una moneda, consume el

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modelo;
 import java.util.ArrayList;
 /**
  * Clase generica que representa un deposito para almacenar elementos de tipo T

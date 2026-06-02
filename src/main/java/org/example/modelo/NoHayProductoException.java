@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modelo;
 /**
  * Excepcion personalizada que se lanza cuando el deposito de productos esta vacio
  * Se utiliza en el metodo comprarProducto del Expendedor cuando no queda stock

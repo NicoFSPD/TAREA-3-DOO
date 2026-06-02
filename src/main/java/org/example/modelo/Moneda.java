@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modelo;
 
 /**
  * Clase abstracta que representa una Moneda en el sistema del expendedor.

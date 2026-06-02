@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modelo;
 /**Clase de la maquina expendedora
  * @author Eduardo Riveros
  * @author Daniel Lopez

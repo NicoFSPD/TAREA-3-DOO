@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modelo;
 
 /**
  * Una enumeracion que le entrega a los productos constantes que los diferencian
