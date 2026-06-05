@@ -38,9 +38,9 @@ public class PanelExpendedor extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
         g.setColor(Color.LIGHT_GRAY);
-        g.fillRect(50, 50, 500, 600);
+        g.fillRect(50, 50, 700, 600);
 
         g.setColor(Color.DARK_GRAY);
-        g.fillRect(350, 500, 100, 100);
+        g.fillRect(550, 500, 100, 100);
     }
 }

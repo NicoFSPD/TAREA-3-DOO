@@ -42,6 +42,6 @@ public class PanelComprador extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
         g.setColor(Color.CYAN);
-        g.fillRect(600, 0, 400, 700);
+        g.fillRect(0, 0, 500, 700);
     }
 }
