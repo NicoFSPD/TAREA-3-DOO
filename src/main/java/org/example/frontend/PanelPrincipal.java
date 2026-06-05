@@ -12,7 +12,7 @@ import org.example.Expendedor;
  * Actua como el panel central de la ventana, integrando el comprador y el expendedor dentro de si.
  * Se encarga de interceptar y distribuir los eventos del mouse.
  * @author Daniel Lopez
- * @version 1, 2 de junio de 2026
+ * @version 1.1, 2 de junio de 2026
  */
 
 public class PanelPrincipal extends JPanel {
@@ -29,14 +29,28 @@ public class PanelPrincipal extends JPanel {
         this.setBackground(Color.WHITE);
         this.setLayout(null);
 
+        /**
+         * Iniciacion de modelo logico y de las vistas
+         */
         modeloExpendedor = new Expendedor(5);
         exp = new PanelExpendedor(modeloExpendedor);
         com = new PanelComprador(modeloExpendedor, this);
 
-        exp.setBounds(0, 0, 600, 700);
-        com.setBounds(600, 0, 400, 700);
+        /**
+         * Dimensiones fisicas de cada panel en pantalla
+         */
+        exp.setBounds(0, 0, 700, 700);
+        com.setBounds(770, 0, 500, 700);
 
+        /**
+         * Agregar componentes al contenedor para que Swing los reconosca
+         */
+        this.add(com);
+        this.add(exp);
 
+        /**
+         * Captura los eventos del mouse
+         */
         this.addMouseListener(new MouseAdapter() {
             /**
              * Evalua la posicion del click del mouse para redirigir el evento al panel correcto.
@@ -55,15 +69,11 @@ public class PanelPrincipal extends JPanel {
     }
 
     /**
-     * Coordina el dibujo en cascada de toda la interfaz grafica.
-     * Limpia la pantalla invocando a la superclase y luego solicita consecutivamente
-     * que el panel del expendedor y el del comprador pinten sus componentes.
+     * Limpia la pantalla invocando a la superclase y deja que Swing maneje el dibujo de forma nativa.
      * @param g el objeto graphics utilizado para pintar en el componente.
      */
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        exp.paintComponent(g);
-        com.paintComponent(g);
     }
 }
